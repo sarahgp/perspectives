@@ -1,0 +1,13 @@
+{
+  "name": "get-data",
+  "version": "0.0.0",
+  "description": "Section where I get data and put into mongo",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "assert": "^1.3.0",
+    "mongodb": "~2.0"
+  },
+  "author": "Sarah GP",
+  "license": "MIT"
+}
