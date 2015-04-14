@@ -6,7 +6,8 @@
   "scripts": {},
   "dependencies": {
     "assert": "^1.3.0",
-    "mongodb": "~2.0"
+    "mongodb": "~2.0",
+    "rsvp": "^3.0.18"
   },
   "author": "Sarah GP",
   "license": "MIT"
