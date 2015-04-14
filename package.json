@@ -1,0 +1,28 @@
+{
+  "name": "perspectives",
+  "version": "0.0.0",
+  "description": "different ways to build the same thing",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.9.0",
+    "gulp-stylus": "^2.0.1",
+    "http-server": "^0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 7000",
+    "watch": "gulp automate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sarahgp/perspectives.git"
+  },
+  "author": "Sarah Groff-Palermo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahgp/perspectives/issues"
+  },
+  "homepage": "https://github.com/sarahgp/perspectives"
+}
