@@ -89,8 +89,14 @@ td {
 a img {
   border: none;
 }
-.color-me {
-  height: 100rem;
+#color-me {
+  min-height: 100rem;
+  height: 100%;
   width: 100%;
   background: #800080;
+}
+#words {
+  width: 60%;
+  padding: 8rem;
+  color: #fff;
 }
