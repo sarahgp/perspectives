@@ -22,4 +22,4 @@ var mongodbRest = require('mongodb-rest'),
 }
 
 
-mongodbRest.startServer(config);
+module.exports = mongodbRest.startServer(config);

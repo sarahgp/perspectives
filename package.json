@@ -17,7 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp build  \n http-server -a localhost -p 7000",
-    "watch": "gulp automate"
+    "watch": "gulp automate",
+    "mongo-rest": "node dev-scripts/mongo-server.js"
   },
   "repository": {
     "type": "git",
