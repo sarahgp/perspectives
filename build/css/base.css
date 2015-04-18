@@ -548,11 +548,10 @@ hr {
   min-height: 100rem;
   height: 100%;
   width: 100%;
-  background: #c1c1c3;
+  background: #52525b;
 }
 #words {
   width: 60%;
   padding: 8rem;
-  color: #1b1825;
-  line-height: 1.5rem;
+  color: #00fab7;
 }
