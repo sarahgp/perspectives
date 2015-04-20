@@ -544,14 +544,48 @@ hr {
   display: table;
   clear: both;
 }
+/* Skeleton Overwrites
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  color: #00fab7;
+  background: #52525b;
+  padding: 4rem 0;
+}
+h1 {
+  letter-spacing: 2px;
+}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: #00c792;
+  border-color: #00c792;
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  background-color: #00946c;
+  border-color: #00946c;
+}
+/* Custom bits
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+p,
+label {
+  color: #ebfffa;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 #color-me {
   min-height: 100rem;
   height: 100%;
   width: 100%;
-  background: #52525b;
-}
-#words {
-  width: 60%;
-  padding: 8rem;
-  color: #00fab7;
 }

@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:500,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/base.css">
   <title>Perspectives</title>
 </head>
 <body>
-  <div id="color-me">
-    <div id="words"></div>
-  </div>
+  <section id="color-me" class="container">
+    <div class="row">
+      <div class="twelve columns"><h1>Library Explorer</h1></div>
+    </div>
+    <form id="look" action="submit" method="post">
+      <div class="row">
+        <div class="eight columns">
+          <label for="searchBox">Query me</label>
+          <input type="text" class="u-full-width" id="searchBox" name="look_for" placeholder="find books that ...">
+          <input type="submit" class="button-primary" value="Look">
+        </div>
+      </div>
+    </form>
+  </section>
   <script src="js/fetch.js"></script>
   <script src="js/vanilla-data.js"></script>
 </body>

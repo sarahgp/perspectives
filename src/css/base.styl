@@ -2,13 +2,42 @@ global-reset()
 
 @import('./vendor/skeleton');
 
+
+/* Skeleton Overwrites
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body
+  color hsla(164, 100%, 49%, 1)
+  background hsla(240, 5%, 34%, 1) 
+  padding 4rem 0
+  
+h1
+  letter-spacing 2px
+  
+.button.button-primary, button.button-primary, 
+input[type="submit"].button-primary, 
+input[type="reset"].button-primary, input[type="button"].button-primary
+  background-color hsla(164, 100%, 39%, 1)
+  border-color hsla(164, 100%, 39%, 1)
+  
+.button.button-primary:hover, button.button-primary:hover, 
+input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, 
+input[type="button"].button-primary:hover, .button.button-primary:focus, 
+button.button-primary:focus, input[type="submit"].button-primary:focus, 
+input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus
+  background-color hsla(164, 100%, 29%, 1)
+  border-color hsla(164, 100%, 29%, 1)
+
+
+/* Custom bits
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+p, label
+ color hsla(164, 100%, 96%, 1)
+ letter-spacing 1px
+ font-weight 400
+ text-transform uppercase
+  
 #color-me
   min-height 100rem
   height 100%
   width 100%
-  background hsla(240, 5%, 34%, 1) 
   
-#words
-  width 60%
-  padding 8rem
-  color hsla(164, 100%, 49%, 1)
