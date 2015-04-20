@@ -19,7 +19,11 @@ var url  = 'mongodb://localhost:27017/books',
 var books = new RSVP.Promise(function(resolve, reject){
   fs.readFile(file, function(err, data){
     err && reject(err);
-    resolve(JSON.parse(data));
+    var data = JSON.parse(data);
+    data.forEach(function(el){
+      el.feeling = el.feeling.split(' ')[1];
+    })
+    resolve(data);
   })
 });
 
