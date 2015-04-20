@@ -30,11 +30,15 @@ input[type="reset"].button-primary:focus, input[type="button"].button-primary:fo
 
 /* Custom bits
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p, label
+p, td
  color hsla(164, 100%, 96%, 1)
  letter-spacing 1px
  font-weight 400
- text-transform uppercase
+ & label 
+   text-transform uppercase
+ 
+th
+  text-transform capitalize
   
 #color-me
   min-height 100rem

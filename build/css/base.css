@@ -578,11 +578,17 @@ input[type="button"].button-primary:focus {
 /* Custom bits
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 p,
-label {
+td {
   color: #ebfffa;
   letter-spacing: 1px;
   font-weight: 400;
+}
+p label,
+td label {
   text-transform: uppercase;
+}
+th {
+  text-transform: capitalize;
 }
 #color-me {
   min-height: 100rem;
