@@ -2,6 +2,7 @@ console.log('vanilla!');
 
 var look  = document.getElementById('look'),
     words = document.getElementById('words'),
+    search = document.getElementById('searchBox')
     input = document.getElementsByTagName("input");
 
 function getAndFilter(val){
@@ -31,6 +32,7 @@ function getAndFilter(val){
 
           keys.forEach(function(key){
             var td = document.createElement("td");
+            td.setAttribute('data-group', key);
             td.innerHTML = el[key];
             tr.appendChild(td);
           });
@@ -43,8 +45,22 @@ function getAndFilter(val){
     });
 }
 
+// MAIN ACTION
 look.onsubmit = function(){
   event.preventDefault();
   getAndFilter(input.lookFor.value.split(':'));
-  console.log('Submit!', input.lookFor.value);
+  // console.log('Submit!', input.lookFor.value);
 }
+
+// ADD ACTION TO TABLE ELEMENTS
+words.addEventListener('click', function(event){
+  var target = event.target;
+  if (target.tagName === 'TD'){
+    var arr = [];
+    arr.push(target.dataset.group);
+    arr.push(target.innerText);
+    search.value = arr.join(':');
+    getAndFilter(arr);
+  }
+  console.log(target.dataset.group);
+})  
