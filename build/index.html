@@ -14,14 +14,18 @@
     <form id="look" action="submit" method="post">
       <div class="row">
         <div class="eight columns">
-          <label for="searchBox">Query me</label>
-          <input type="text" class="u-full-width" id="searchBox" name="look_for" placeholder="find books that ...">
+          <label for="searchBox">Query me for color, height, genre, or feeling</label>
+          <input type="text" class="u-full-width" id="searchBox" name="lookFor" placeholder="e.g., feeling:affectionate">
           <input type="submit" class="button-primary" value="Look">
         </div>
       </div>
     </form>
+    <div id="words">
+      
+    </div>
   </section>
   <script src="js/fetch.js"></script>
+  <script src="js/lodash.min.js"></script>
   <script src="js/vanilla-data.js"></script>
 </body>
 </html>
