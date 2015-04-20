@@ -4,14 +4,10 @@ var look  = document.getElementById('look'),
     words = document.getElementById('words'),
     input = document.getElementsByTagName("input");
 
-look.onsubmit = function(){
-  event.preventDefault();
+function getAndFilter(val){
   words.innerHTML = '';
-  console.log('Submit!', input.lookFor.value);
-  var val = input.lookFor.value.split(':');
   fetch('http://0.0.0.0:3000/books/books/')
     .then(function(response) {
-      console.log(val);
       if (response.status !== 200) {  
               console.log('Looks like there was a problem. Status Code: ' +  
                 response.status);  
@@ -45,4 +41,10 @@ look.onsubmit = function(){
     }).catch(function(ex) {
       console.log('parsing failed', ex)
     });
+}
+
+look.onsubmit = function(){
+  event.preventDefault();
+  getAndFilter(input.lookFor.value.split(':'));
+  console.log('Submit!', input.lookFor.value);
 }
