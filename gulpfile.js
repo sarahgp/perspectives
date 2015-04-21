@@ -29,7 +29,7 @@ gulp.task('lint', function(){
 });
 
 gulp.task('automate', function(){
-  gulp.watch(['./src/css/*.styl', './src/*.html'], ['compile-css', 'compile-html']);
+  gulp.watch(['./src/css/*.styl', './src/*.html', './src/js/*.js'], ['compile-css', 'compile-html', 'lint']);
 });
 
 gulp.task('build', ['compile-css', 'compile-html', 'copy-fetch']);

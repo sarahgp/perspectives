@@ -28,7 +28,7 @@ function getAndFilter(val){
       val[1] = val[1].trim();
 
       json.forEach(function(el){
-        if (el[val[0]] === val[1] || el[val[0]].toLowerCase() === val[1]){
+        if (el[val[0]].trim() === val[1] || el[val[0]].trim().toLowerCase() === val[1]){
           var tr = document.createElement("tr");
 
           keys.forEach(function(key){
@@ -49,8 +49,9 @@ function getAndFilter(val){
 // MAIN ACTION
 look.onsubmit = function(){
   event.preventDefault();
+  suggested.className += ' hidden'
   getAndFilter(input.lookFor.value.split(':'));
-  // console.log('Submit!', input.lookFor.value);
+  console.log('Submit!', input.lookFor.value);
 }
 
 // ADD ACTION TO TABLE ELEMENTS & BUTTONS
