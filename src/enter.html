@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/base.css">
+  <title>Perspectives</title>
+</head>
+<body>
+  <div class="container">
+    <form action="submit" method="post">
+      <div class="row">
+        <div class="ten columns">
+          <h2>Enter New Book</h2>
+          <label for="color">color</label>
+          <input type="text" id="color" name="color" class="u-full-width">
+          <label for="height">height</label>
+          <input type="text" id="height" name="height" class="u-full-width">
+          <label for="pages">pages</label>
+          <input type="text" id="pages" name="pages" class="u-full-width">
+          <label for="author">author</label>
+          <input type="text" id="author" name="author" class="u-full-width">
+          <label for="feeling">feeling</label>
+          <input type="text" id="feeling" name="feeling" class="u-full-width">
+          <label for="genre">genre</label>
+          <select class="u-full-width" id="genre"></select>
+          <label for="subgenre">subgenre</label>
+          <select class="u-full-width" id="subgenre"></select>
+          <input type="submit" class="button-primary" value="Enter">
+        </div>
+      </div>  
+    </form>
+  </div>
+  
+  <script src="js/fetch.js"></script>
+  <script src="js/lodash.min.js"></script>
+  <script src="js/entry.js"></script>
+</body>
+</html>
