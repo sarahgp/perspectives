@@ -546,6 +546,11 @@ hr {
 }
 /* Skeleton Overwrites
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a:hover,
+a:focus {
+  color: #00fab7;
+  text-decoration: underline;
+}
 body {
   color: #00fab7;
   background: #52525b;
@@ -553,6 +558,26 @@ body {
 }
 h1 {
   letter-spacing: 2px;
+}
+a,
+h6,
+p,
+td,
+label {
+  color: #ebfffa;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+label,
+h6 {
+  text-transform: uppercase;
+}
+td:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+th {
+  text-transform: capitalize;
 }
 .button.button-primary,
 button.button-primary,
@@ -575,27 +600,33 @@ input[type="button"].button-primary:focus {
   background-color: #00946c;
   border-color: #00946c;
 }
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  margin-right: 2rem;
+  color: #00c792;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #ebfffa;
+}
 /* Custom bits
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p,
-td,
-label {
-  color: #ebfffa;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-label {
-  text-transform: uppercase;
-}
-td:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-th {
-  text-transform: capitalize;
-}
 #color-me {
   min-height: 100rem;
   height: 100%;
   width: 100%;
+}
+.hidden {
+  display: none;
 }

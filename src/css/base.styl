@@ -5,6 +5,10 @@ global-reset()
 
 /* Skeleton Overwrites
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a:hover, a:focus
+  color hsla(164, 100%, 49%, 1)
+  text-decoration underline
+
 body
   color hsla(164, 100%, 49%, 1)
   background hsla(240, 5%, 34%, 1) 
@@ -12,6 +16,21 @@ body
   
 h1
   letter-spacing 2px
+  
+a, h6, p, td, label
+ color hsla(164, 100%, 96%, 1)
+ letter-spacing 1px
+ font-weight 400
+
+label, h6 
+ text-transform uppercase
+ 
+td:hover
+  text-decoration underline
+  cursor pointer
+ 
+th
+  text-transform capitalize
   
 .button.button-primary, button.button-primary, 
 input[type="submit"].button-primary, 
@@ -26,27 +45,21 @@ button.button-primary:focus, input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus
   background-color hsla(164, 100%, 29%, 1)
   border-color hsla(164, 100%, 29%, 1)
+  
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]
+  margin-right 2rem
+  color hsla(164, 100%, 39%, 1)
+  
+  &:hover, &:focus
+    color hsla(164, 100%, 96%, 1)
 
 
 /* Custom bits
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p, td, label
- color hsla(164, 100%, 96%, 1)
- letter-spacing 1px
- font-weight 400
-
-label 
- text-transform uppercase
- 
-td:hover
-  text-decoration underline
-  cursor pointer
- 
-th
-  text-transform capitalize
-  
 #color-me
   min-height 100rem
   height 100%
   width 100%
   
+.hidden
+  display none

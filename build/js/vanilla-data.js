@@ -3,7 +3,8 @@ console.log('vanilla!');
 var look  = document.getElementById('look'),
     words = document.getElementById('words'),
     search = document.getElementById('searchBox')
-    input = document.getElementsByTagName("input");
+    input = document.getElementsByTagName('input'),
+    suggested = document.getElementById('suggested');
 
 function getAndFilter(val){
   words.innerHTML = '';
@@ -52,7 +53,7 @@ look.onsubmit = function(){
   // console.log('Submit!', input.lookFor.value);
 }
 
-// ADD ACTION TO TABLE ELEMENTS
+// ADD ACTION TO TABLE ELEMENTS & BUTTONS
 words.addEventListener('click', function(event){
   var target = event.target;
   if (target.tagName === 'TD'){
@@ -62,5 +63,16 @@ words.addEventListener('click', function(event){
     search.value = arr.join(':');
     getAndFilter(arr);
   }
-  console.log(target.dataset.group);
-})  
+});
+
+suggested.addEventListener('click', function(event){
+  var target = event.target;
+  if (target.tagName === 'BUTTON'){
+    var text = target.innerText.toLowerCase(),
+        arr = text.split(':')
+    search.value = text;
+    this.className += ' hidden';
+    getAndFilter(arr);
+  }
+  console.log(this);
+});
