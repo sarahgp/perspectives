@@ -51,7 +51,7 @@ look.onsubmit = function(){
   event.preventDefault();
   suggested.className += ' hidden'
   getAndFilter(input.lookFor.value.split(':'));
-  console.log('Submit!', input.lookFor.value);
+  // console.log('Submit!', input.lookFor.value);
 }
 
 // ADD ACTION TO TABLE ELEMENTS & BUTTONS
